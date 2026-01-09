@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Interest - Kinship</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Kinship</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="principles.html">Core Principles</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="living.html">Imagining Life</a></li>
+                <li><a href="detailed-proposal.html">Detailed Proposal</a></li>
+                <li><a href="sources.html">Sources</a></li>
+                <li><a href="express-interest.html" class="active">Express Interest</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Express Interest</h1>
+        </div>
+        
+        <div class="content">
+            <p class="intro-text">If Kinship resonates with you and you're interested in exploring this path together, please fill out this form. These questions help us begin a meaningful conversation about whether this exploration calls to you and what you might bring to it.</p>
+            
+            <p>This is for those who hear "primitive" as a compliment rather than an insult—who see living close to the land, using simple tools, meeting needs directly as aspiration rather than deprivation. If that doesn't resonate, this path probably isn't for you.</p>
+            
+            <p>Take your time with your answers. Thoughtful responses matter more than speed. There are no "right" answers—I'm looking for genuine engagement with the ideas and honest self-assessment about what this path might require.</p>
+            
+            <p>This is the beginning of a dialogue, not an application process. If there seems to be alignment, we can begin a conversation about what exploring together might look like.</p>
+            
+            <form name="express-interest" method="POST" data-netlify="true" class="interest-form">
+                <input type="hidden" name="form-name" value="express-interest" />
+                
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="location">Current Location (City, Country)</label>
+                    <input type="text" id="location" name="location">
+                    <p class="form-note">Where are you currently based? This helps me understand geographic proximity and mobility.</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="question1">What draws you to Kinship? *</label>
+                    <p class="form-note">Tell me something of who you are and what calls you to this direction. What resonated when you read about this project? What are you seeking or moving away from?</p>
+                    <textarea id="question1" name="question1" rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="question2">Which of the Seven Laws resonates most deeply with you, and why? *</label>
+                    <p class="form-note">The Seven Laws (Wholes, Flow, Balance, Limits, Cause & Effect, Planes, Evolution) provide our foundation. Which speaks to you most strongly?</p>
+                    <textarea id="question2" name="question2" rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="question3">Kinship is guided by the question "What can we NOT do?" rather than "What else can I do?" How does this resonate with you? *</label>
+                    <p class="form-note">This minimalist approach—practicing restraint and subtraction rather than expansion—informs (but doesn't define) how we might live together.</p>
+                    <textarea id="question3" name="question3" rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="question4">What experience do you have with self-sufficiency, primitive skills, low-intervention cultivation, foraging, hunting, or related practices? *</label>
+                    <p class="form-note">Honest assessment matters more than impressive credentials. What have you practiced? What skills are you developing?</p>
+                    <textarea id="question4" name="question4" rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="question5">How do you understand and relate to the gradual, uneven decline of industrial civilization? *</label>
+                    <p class="form-note">Do you consider this an important question, or irrelevant? What does this trajectory mean for how you want to live?</p>
+                    <textarea id="question5" name="question5" rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="question6">Kinship may involve periods of simplicity and physical challenge as we explore living within ecological limits. How do you relate to discomfort and adaptation? *</label>
+                    <p class="form-note">Living close to the land often means being cold, wet, tired, uncertain. It means physical work and material simplicity.</p>
+                    <textarea id="question6" name="question6" rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="question7">How do you approach conflict and disagreement? *</label>
+                    <p class="form-note">This isn't about privileging a single way of relating to conflict and disagreement. It's about understanding how you engage with them.</p>
+                    <textarea id="question7" name="question7" rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="question8">What skills, knowledge, or experience might you bring? *</label>
+                    <p class="form-note">Think broadly: practical skills, languages, knowledge of ecosystems, intellectual capacities, life experiences. What can you offer? What do you want to learn?</p>
+                    <textarea id="question8" name="question8" rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="question9">What are your current commitments or constraints? *</label>
+                    <p class="form-note">Work, family, location, financial situation, health, legal status—what affects your ability to participate? What's your timeline?</p>
+                    <textarea id="question9" name="question9" rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="question10">How do you imagine participating in Kinship? *</label>
+                    <p class="form-note">As kindred (core participant)? As a supporter (contributing from wherever you are)? As a journeyer (joining for periods of exchange)? Something else?</p>
+                    <textarea id="question10" name="question10" rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Do you have resources you could contribute to this exploration? *</label>
+                    <p class="form-note">Resources take many forms: financial capacity, skills, time, land access, connections, equipment, knowledge. Be honest about your situation.</p>
+                    
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="financial_capacity" value="yes_significant" required>
+                            Yes, I could contribute significantly to collective endeavors (including potential land acquisition)
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="financial_capacity" value="yes_modest" required>
+                            Yes, I could contribute modestly to collective endeavors
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="financial_capacity" value="limited" required>
+                            My financial capacity is limited but I could contribute through labor, skills, and presence
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="financial_capacity" value="other" required>
+                            Other forms of support (please explain below)
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="question11">If you selected "other" above, or want to elaborate on what you might contribute, please do so here:</label>
+                    <textarea id="question11" name="question11" rows="4"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="question12">Is there anything else you want to share? *</label>
+                    <p class="form-note">Anything else you'd like to share or comment on? Concerns, hopes, questions, relevant experiences or perspectives?</p>
+                    <textarea id="question12" name="question12" rows="6" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            
+            <div style="margin-top: 3rem; padding: 2rem; background: rgba(107, 124, 89, 0.08); border-radius: 4px;">
+                <p><strong>What Happens Next?</strong></p>
+                <p>I'll read your submission carefully and respond within a few weeks. If there seems to be alignment, we can begin a conversation about what exploring together might look like—perhaps meeting in person, exchanging ideas, discussing timelines and possibilities.</p>
+                <p>This is not an application with acceptance or rejection. It's the beginning of a dialogue between people who might walk a path together. Some conversations will lead to deeper engagement, others to mutual recognition that this isn't the right fit. Both outcomes are valuable.</p>
+                <p>Thank you for taking the time to engage thoughtfully with these questions. Your willingness to consider this path, regardless of where it leads, matters.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Kinship · An Ecological Inquiry into Living Differently · 2026</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem;">Guided by the Seven Laws of Ecology (John Michael Greer) and the Three Freedoms (Graeber & Wengrow)</p>
+    </footer>
+</body>
+</html>

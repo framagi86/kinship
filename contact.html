@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kinship</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Kinship</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="principles.html">Core Principles</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="living.html">Imagining Life</a></li>
+                <li><a href="detailed-proposal.html">Detailed Proposal</a></li>
+                <li><a href="sources.html">Sources</a></li>
+                <li><a href="express-interest.html">Express Interest</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Contact</h1>
+        </div>
+        
+        <div class="content">
+            <p class="intro-text">Have questions about Kinship? Curious about the exploration? Want to share thoughts or resources? Feel free to reach out.</p>
+            
+            <p>If you're interested in potentially joining this exploration, please use the <a href="express-interest.html">Express Interest form</a> instead—it asks specific questions that help us begin the conversation meaningfully.</p>
+            
+            <p>For general inquiries, use the form below:</p>
+            
+            <form name="contact" method="POST" data-netlify="true" class="contact-form">
+                <input type="hidden" name="form-name" value="contact" />
+                
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="8" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            
+            <div style="margin-top: 3rem; text-align: center; padding: 2rem; background: rgba(107, 124, 89, 0.08); border-radius: 4px;">
+                <p><strong>Timeline</strong></p>
+                <p>Potentially beginning to journey together from mid-2026, perhaps finding a base by autumn 2027. But the real work begins now, in conversation and trust-building.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Kinship · An Ecological Inquiry into Living Differently · 2026</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem;">Guided by the Seven Laws of Ecology (John Michael Greer) and the Three Freedoms (Graeber & Wengrow)</p>
+    </footer>
+</body>
+</html>
